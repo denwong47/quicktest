@@ -1,6 +1,18 @@
 # quicktest
 Subclass of unittest.TestCase for quicker writing of Python unit tests
 
+## quicktest.TestCase
+### quicktest.TestCase().conduct_tests()
+```
+# Declaration
+class TestCase(unittest.TestCase):
+    def conduct_tests(
+        self,
+        func,
+        tests:dict,
+        ):
+        ...
+```
 Conducts a series of tests against a single function using the supplied arguments.
 This is designed for quick establishmenet of unittests in TDD process.
 
